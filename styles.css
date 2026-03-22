@@ -52,3 +52,25 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+.heading, main {
+    border: 1px solid red;
+    height: 100vh;
+}
+
+
+.heading {
+    background-image: url(background-img.jpg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading {
+    width: 30%;
+}
