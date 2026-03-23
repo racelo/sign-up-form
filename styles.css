@@ -53,6 +53,12 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
 .heading, main {
     border: 1px solid red;
     height: 100vh;
@@ -72,5 +78,68 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .heading {
-    width: 30%;
+    width: 60%;
+    /* margin-right:; */
+}
+
+main {
+    background-color: rgb(249, 250, 251);
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 45px; */
+    justify-content: center;
+}
+
+main > section, form > h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+main form {
+    background-color: #fff;
+    margin: 40px 0;
+    padding-left: 45px;
+}
+
+main > section:first-child p:first-of-type{
+    margin-bottom: 20px;
+    margin-right: 17%;
+    line-height: 1.3;
+}
+
+main > section {
+    padding-left: 45px;
+}
+
+form > section {
+    display: flex;
+    gap: 80px;
+    margin: 20px 0;
+}
+
+form > section > p {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 250px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+form label {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+input:focus {
+    border: 1px solid lightblue;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+input:invalid {
+    border: 1px solid red;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
 }

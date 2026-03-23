@@ -14,13 +14,14 @@
                 <h1>ODIN</h1>
             </div>
             <main>
-                <p>This is not a real online service! You know you need something like this in your life to help you
-                    realize
-                    your deepest dreams. Sign up now to get started.</p>
-                <p>You know you want to.</p>
+                <section>
+                    <p>This is not a real online service! You know you need something like this in your life to help you
+                        realize your deepest dreams. Sign up now to get started.</p>
+                    <p>You know you want to.</p>
+                </section>
                 <form action="" method="post">
+                    <h2>Let's do this!</h2>
                     <section>
-                        <h2>Let's do this!</h2>
                         <p>
                             <label for="first-name">First Name</label>
                             <input type="text" id="first-name" name="firstName">
@@ -29,6 +30,8 @@
                             <label for="last-name">Last Name</label>
                             <input type="text" id="last-name" name="lastName">
                         </p>
+                    </section>
+                    <section>
                         <p>
                             <label for="mail">Email</label>
                             <input type="email" id="mail" name="email">
@@ -37,10 +40,20 @@
                             <label for="phone-number">Phone Number</label>
                             <input type="tel" id="phone-number" name="phoneNumber">
                         </p>
+                    </section>
+                    <section>
                         <p>
                             <label for="pwd"> Password</label>
-                            <input type="password" id="pwd" name="password">
+                            <input type="password" id="pwd" name="password" minlength="8"
+                                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
                         </p>
+                        <p>
+                            <label for="confirm-pwd">Confirm Password</label>
+                            <input type="password" id="confirm-pwd" name="confirm-pwd" minlength="8"
+                                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                        </p>
+                    </section>
+
                     </section>
 
                     <section>
@@ -49,8 +62,9 @@
                         </p>
                     </section>
                 </form>
-                <p>Already have an account? <a href="">Log in</a></p>
-
+                <section>
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </section>
 
             </main>
         </div>
