@@ -55,12 +55,21 @@ h1, h2, h3, h4, h5, h6 {
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+        url('fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 .heading, main {
-    border: 1px solid red;
     height: 100vh;
 }
 
@@ -79,31 +88,34 @@ body {
 
 .heading {
     width: 60%;
-    /* margin-right:; */
 }
 
 main {
     background-color: rgb(249, 250, 251);
     display: flex;
     flex-direction: column;
-    /* padding-left: 45px; */
     justify-content: center;
 }
 
 main > section, form > h2 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
 }
 
 main form {
     background-color: #fff;
-    margin: 40px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.20);
+    padding: 20px 0;
     padding-left: 45px;
+}
+
+main > section:first-child {
+    margin-bottom: 40px;
 }
 
 main > section:first-child p:first-of-type{
     margin-bottom: 20px;
-    margin-right: 17%;
+    margin-right: 30%;
     line-height: 1.3;
 }
 
@@ -142,4 +154,49 @@ input:focus {
 input:invalid {
     border: 1px solid red;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+main section:last-child {
+    margin-top: 30px;
+}
+
+main section:last-child button {
+    background-color: #596D48;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 30px;
+    margin-bottom: 25px;
+}
+
+main section:last-child > p + p {
+    font-size: 15px;
+}
+
+main section:last-child > p + p a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+
+.heading div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    margin-top: 123px;
+}
+
+.heading img {
+    /* display: inline-block; */
+    width: 80px;
+}
+
+h1 {
+    /* display: inline-block; */
+    color: #fff;
+    font-family: "Norse", "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 85px;
+    /* text-align: center; */
 }
