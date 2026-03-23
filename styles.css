@@ -180,7 +180,7 @@ main section:last-child > p + p a {
 }
 
 
-.heading div {
+.heading div:first-child {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,14 +189,26 @@ main section:last-child > p + p a {
 }
 
 .heading img {
-    /* display: inline-block; */
     width: 80px;
 }
 
 h1 {
-    /* display: inline-block; */
     color: #fff;
     font-family: "Norse", "Roboto", Arial, Helvetica, sans-serif;
     font-size: 85px;
-    /* text-align: center; */
+}
+
+.heading div + div {
+    color: #fff;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+    transform: translate(100%, 0);
+
+}
+
+.heading div + div a {
+    color: #fff;
 }
